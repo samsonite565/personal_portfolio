@@ -1,0 +1,36 @@
+.hero-section {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 2fr;
+
+  gap: 20px;
+  padding: 40px 0;
+
+  .hero_textarea {
+    align-self: center;
+    h1 {
+      font-size: 57px;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 32px;
+      margin-bottom: auto;
+    }
+    p {
+      font-size: 22px;
+      color: var(--tc-white);
+    }
+  }
+
+  .propic img {
+    border-radius: 50%;
+    width: 582px;
+    height: 581px;
+    object-fit: cover;
+    @media (width < 1440px) {
+        width: 397px;
+        height: 396px;
+    }
+  }
+}

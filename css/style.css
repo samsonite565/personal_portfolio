@@ -38,7 +38,9 @@ body {
   background-color: black;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Poppins";
   font-weight: 700;
   line-height: 1.1;
@@ -48,9 +50,13 @@ h1, h2, h3 {
 
 p {
   margin-top: 0;
+  font-family: "Poppins";
+  font-weight: 400;
 }
 
-a, a:visited, a:active {
+a,
+a:visited,
+a:active {
   text-decoration: none;
   font-family: "Poppins";
   font-weight: 400;
@@ -66,8 +72,16 @@ a, a:visited, a:active {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: var(--cp-light-gray);
-  padding: 20px;
+  padding: 15px;
   color: white;
+}
+@media (width <= 1440px) {
+  .navbar {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+    padding: 15;
+  }
 }
 .navbar .logo {
   margin: 0;
@@ -82,4 +96,41 @@ a, a:visited, a:active {
 .navbar .navlinks a:hover {
   color: var(--cp-hover-state-achorpoits);
   transition: color 0.3s ease-in;
+}
+
+.hero-section {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 40px 0;
+}
+.hero-section .hero_textarea {
+  align-self: center;
+}
+.hero-section .hero_textarea h1 {
+  font-size: 57px;
+  margin-bottom: 0;
+}
+.hero-section .hero_textarea h2 {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: auto;
+}
+.hero-section .hero_textarea p {
+  font-size: 22px;
+  color: var(--tc-white);
+}
+.hero-section .propic img {
+  border-radius: 50%;
+  width: 582px;
+  height: 581px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (width < 1440px) {
+  .hero-section .propic img {
+    width: 397px;
+    height: 396px;
+  }
 }/*# sourceMappingURL=style.css.map */

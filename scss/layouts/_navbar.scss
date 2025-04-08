@@ -1,4 +1,3 @@
-@use "abstract/variables";
 .navbar {
   display: flex;
   align-items: center;
@@ -9,22 +8,29 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: var(--cp-light-gray);
-  padding: 20px;
+  padding: 15px;
   color: white;
 
+  @media (width <= 1440px) {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+    padding: 15;
+  }
+
   .logo {
-    margin:0;
+    margin: 0;
   }
 
   .navlinks {
     display: inline-flex;
     gap: 2.5rem;
     a {
-        color: var(--tc-white);
+      color: var(--tc-white);
     }
-    a:hover{
-        color:var(--cp-hover-state-achorpoits);
-        transition: color 0.3s ease-in;
+    a:hover {
+      color: var(--cp-hover-state-achorpoits);
+      transition: color 0.3s ease-in;
     }
   }
 }
