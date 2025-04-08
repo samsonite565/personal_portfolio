@@ -1,7 +1,9 @@
 .hero-section {
   display: grid;
   margin: 0 auto;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  padding: 20px;
 
   gap: 20px;
   padding: 40px 0;
@@ -11,6 +13,9 @@
     h1 {
       font-size: 57px;
       margin-bottom: 0;
+      span {
+        color: var(--cp-dark-red);
+      }
     }
     h2 {
       font-weight: 400;
@@ -29,8 +34,8 @@
     height: 581px;
     object-fit: cover;
     @media (width < 1440px) {
-        width: 397px;
-        height: 396px;
+      width: 397px;
+      height: 396px;
     }
   }
 }

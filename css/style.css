@@ -35,6 +35,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  max-width: 1428;
   background-color: black;
 }
 
@@ -101,7 +102,9 @@ a:active {
 .hero-section {
   display: grid;
   margin: 0 auto;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  padding: 20px;
   gap: 20px;
   padding: 40px 0;
 }
@@ -111,6 +114,9 @@ a:active {
 .hero-section .hero_textarea h1 {
   font-size: 57px;
   margin-bottom: 0;
+}
+.hero-section .hero_textarea h1 span {
+  color: var(--cp-dark-red);
 }
 .hero-section .hero_textarea h2 {
   font-weight: 400;
