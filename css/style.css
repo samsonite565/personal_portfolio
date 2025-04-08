@@ -1,0 +1,85 @@
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/poppins-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/poppins-v22-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  --cp-dark-black: #000000;
+  --cp-light-gray: #1d1513;
+  --cp-dark-red: #662121;
+  --cp-light-white: #f0eeee;
+  --tc-white: #ffffff;
+  --cp-hover-state-achorpoits: #697565;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins";
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+  color: white;
+}
+
+p {
+  margin-top: 0;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  width: 1428px;
+  margin: 0 auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: var(--cp-light-gray);
+  padding: 20px;
+  color: white;
+}
+.navbar .logo {
+  margin: 0;
+}
+.navbar .navlinks {
+  display: inline-flex;
+  gap: 2.5rem;
+}
+.navbar .navlinks a {
+  color: var(--tc-white);
+}
+.navbar .navlinks a:hover {
+  color: var(--cp-hover-state-achorpoits);
+  transition: color 0.3s ease-in;
+}/*# sourceMappingURL=style.css.map */
