@@ -3,8 +3,11 @@
 //Converts pexels to rems
 @function rem($n) {
   $root-px-value: 16;
-  @return math.div($n, $root-px-value) * 1rem;
+  @if math.is-unitless($n) {
+    @return math.div($n, $root-px-value) + rem;
+  } @else {
+    @error "You have provide unit, please set the value only to interger";
+  }
 }
 
 //Convert pexels to em
-

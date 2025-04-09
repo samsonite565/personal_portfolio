@@ -28,9 +28,19 @@ html {
 body {
   margin: 0;
   padding: 0;
-  max-width: 1428px;
+  max-width: 89.6875rem;
   margin: 0 auto;
   background-color: black;
+}
+
+.wrapper {
+  width: 89.6875rem;
+  background-color: var(--cp-light-gray);
+}
+@media (width <= 1440px) {
+  .wrapper {
+    width: 61.25rem;
+  }
 }
 
 :root {
@@ -71,7 +81,6 @@ a:active {
   align-items: center;
   justify-content: space-between;
   height: 4.5rem;
-  width: 89.25rem;
   margin: 0 auto;
   border-bottom-left-radius: 1.25rem;
   border-bottom-right-radius: 1.25rem;
@@ -82,7 +91,6 @@ a:active {
 }
 @media (width <= 1440px) {
   .navbar {
-    width: 61.25rem;
     height: auto;
     margin: 0 auto;
     padding: 0.9375rem;
@@ -153,4 +161,12 @@ a:active {
     width: 397px;
     height: 396px;
   }
+}
+
+.skills-butn {
+  display: inline-block;
+  border: 2px solid red;
+  font-size: 25px;
+  border-radius: 40px;
+  width: 127px;
 }/*# sourceMappingURL=style.css.map */
