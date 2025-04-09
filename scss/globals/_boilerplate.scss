@@ -1,4 +1,5 @@
-@use "../abstract/functions";
+@use "../abstract/functions" as f;
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -13,7 +14,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  max-width: 1428px;
+  max-width: f.rem(1435);
   margin: 0 auto;
   background-color: black;
 }
