@@ -1,0 +1,10 @@
+@use "sass:math";
+
+//Converts pexels to rems
+@function rem($n) {
+  $root-px-value: 16;
+  @return math.div($n, $root-px-value) * 1rem;
+}
+
+//Convert pexels to em
+

@@ -1,0 +1,13 @@
+@use "sass:map";
+
+$breakpoints: (
+  "large": 1440px,
+  "medium": 700px,
+  "small": 300px,
+);
+// When query the parameter $size should be same as the keys in values
+@mixin breakpoint-down($size) {
+  @media (width <= map.get($breakpoints, $size)) {
+    @content;
+  }
+}
