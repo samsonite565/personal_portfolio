@@ -1,4 +1,5 @@
 @use "../abstract/functions" as f;
+@use "../abstract/mixins" as mix;
 
 html {
   box-sizing: border-box;
@@ -17,4 +18,12 @@ body {
   max-width: f.rem(1435);
   margin: 0 auto;
   background-color: black;
+}
+
+.wrapper {
+  width: f.rem(1435);
+  background-color: var(--cp-light-gray);
+  @include mix.breakpoint-down("large") {
+    width: f.rem(980);
+  }
 }

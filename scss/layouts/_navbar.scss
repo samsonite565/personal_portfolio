@@ -1,13 +1,11 @@
 @use "../abstract/mixins" as mix;
 @use "../abstract/functions" as f;
 
-
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: f.rem(72);
-  width: f.rem(1435);
   margin: 0 auto;
   border-bottom-left-radius: f.rem(20);
   border-bottom-right-radius: f.rem(20);
@@ -17,18 +15,10 @@
   margin-block-end: f.rem(85);
 
   @include mix.breakpoint-down("large") {
-    width: f.rem(980);
     height: auto;
     margin: 0 auto;
     padding: f.rem(15);
   }
-
-  // @media (width <= 1440px) {
-  //   width: 980px;
-  //   height: auto;
-  //   margin: 0 auto;
-  //   padding: 15;
-  // }
 
   .logo {
     margin: 0;
