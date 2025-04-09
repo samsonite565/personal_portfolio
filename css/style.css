@@ -14,15 +14,6 @@
   font-weight: 700;
   src: url("/fonts/poppins-v22-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-:root {
-  --cp-dark-black: #000000;
-  --cp-light-gray: #1d1513;
-  --cp-dark-red: #662121;
-  --cp-light-white: #f0eeee;
-  --tc-white: #ffffff;
-  --cp-hover-state-achorpoits: #697565;
-}
-
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -40,6 +31,15 @@ body {
   max-width: 1428px;
   margin: 0 auto;
   background-color: black;
+}
+
+:root {
+  --cp-dark-black: #000000;
+  --cp-light-gray: #1d1513;
+  --cp-dark-red: #662121;
+  --cp-light-white: #f0eeee;
+  --tc-white: #ffffff;
+  --cp-hover-state-achorpoits: #697565;
 }
 
 h1,
@@ -70,21 +70,22 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
-  width: 1428px;
+  height: 4.5rem;
+  width: 89.25rem;
   margin: 0 auto;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
   background-color: var(--cp-light-gray);
-  padding: 15px;
+  padding: 0.9375rem;
   color: white;
+  margin-block-end: 5.3125rem;
 }
 @media (width <= 1440px) {
   .navbar {
-    width: 980px;
+    width: 61.25rem;
     height: auto;
     margin: 0 auto;
-    padding: 15;
+    padding: 0.9375rem;
   }
 }
 .navbar .logo {
@@ -103,13 +104,21 @@ a:active {
 }
 
 .hero-section {
+  max-width: 1187px;
   display: grid;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   padding: 20px;
-  gap: 20px;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   padding: 40px 0;
+}
+@media (width <= 1440px) {
+  .hero-section {
+    max-width: 847px;
+  }
 }
 .hero-section .hero_textarea {
   align-self: center;
@@ -125,10 +134,12 @@ a:active {
   font-weight: 400;
   font-size: 32px;
   margin-bottom: auto;
+  line-height: 70px;
 }
 .hero-section .hero_textarea p {
   font-size: 22px;
   color: var(--tc-white);
+  max-width: 40ch;
 }
 .hero-section .propic img {
   border-radius: 50%;
