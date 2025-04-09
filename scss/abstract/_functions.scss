@@ -6,8 +6,16 @@
   @if math.is-unitless($n) {
     @return math.div($n, $root-px-value) + rem;
   } @else {
-    @error "You have provide unit, please set the value only to interger";
+    @error "You have provide unit, please set the #{$n} only to int";
   }
 }
 
 //Convert pexels to em
+@function em($n) {
+  $root-em-value: 16;
+  @if math.is-unitless($n) {
+    @return math.div($n, $root-em-value) + em;
+  } @else {
+    @error "You have provided a unit, please set #{$n} only to int";
+  }
+}

@@ -37,7 +37,7 @@ body {
   width: 89.6875rem;
   background-color: var(--cp-light-gray);
 }
-@media (width <= 1440px) {
+@media (width <= 90em) {
   .wrapper {
     width: 61.25rem;
   }
@@ -89,7 +89,7 @@ a:active {
   color: white;
   margin-block-end: 5.3125rem;
 }
-@media (width <= 1440px) {
+@media (width <= 90em) {
   .navbar {
     height: auto;
     margin: 0 auto;
@@ -123,7 +123,7 @@ a:active {
        column-gap: 20px;
   padding: 40px 0;
 }
-@media (width <= 1440px) {
+@media (width <= 90em) {
   .hero-section {
     max-width: 847px;
   }
@@ -156,7 +156,7 @@ a:active {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (width < 1440px) {
+@media (width <= 90em) {
   .hero-section .propic img {
     width: 397px;
     height: 396px;
