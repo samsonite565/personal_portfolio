@@ -1,0 +1,25 @@
+.places-worked {
+    display: grid;
+    grid-template-rows: 40px 60px;
+    row-gap: 20px;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 21px;
+
+    h2 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 32px;
+        margin-top: 10px;
+    }
+
+    .work-logos{
+        display: flex;
+        width: 160px;
+        border: 2px solid red;
+        justify-items: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+}

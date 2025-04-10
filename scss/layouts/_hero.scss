@@ -2,24 +2,24 @@
 @use "../abstract/functions" as f;
 
 .hero-section {
-  max-width: 1187px;
+  max-width: f.rem(1187);
   display: grid;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  padding: 20px;
+  padding: f.rem(20);
   justify-content: center;
-  column-gap: 20px;
-  padding: 40px 0;
+  column-gap: f.rem(20);
+  padding: f.rem(40) 0;
 
   @include mix.breakpoint-down("large") {
-    max-width: 847px;
+    max-width: f.rem(847);
   }
 
   .hero_textarea {
     align-self: center;
     h1 {
-      font-size: 57px;
+      font-size: f.rem(57);
       margin-bottom: 0;
       span {
         color: var(--cp-dark-red);
@@ -27,12 +27,12 @@
     }
     h2 {
       font-weight: 400;
-      font-size: 32px;
+      font-size: f.rem(32);
       margin-bottom: auto;
-      line-height: 70px;
+      line-height: f.rem(70);
     }
     p {
-      font-size: 22px;
+      font-size: f.rem(22);
       color: var(--tc-white);
       max-width: 40ch;
     }
@@ -40,20 +40,18 @@
 
   .propic img {
     border-radius: 50%;
-    width: 582px;
-    height: 581px;
+    width: f.rem(582);
+    height: f.rem(581);
     object-fit: cover;
-    @include mix.breakpoint-down('large'){
-      width: 397px;
-      height: 396px;
+    @include mix.breakpoint-down("large") {
+      width: f.rem(397);
+      height: f.rem(396);
     }
   }
 }
 
 .skills-butn {
-  display: inline-block;
-  border: 2px solid red;
-  font-size: 25px;
-  border-radius: 40px;
-  width: 127px;
+  background: var(--cp-dark-red);
+  color: white;
+  font-size: f.rem(18);
 }
