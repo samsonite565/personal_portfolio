@@ -1,25 +1,40 @@
+@use "../abstract/functions" as f;
+
 .places-worked {
-    display: grid;
-    grid-template-rows: 40px 60px;
-    row-gap: 20px;
+  display: grid;
+  height: inherit;
+  grid-template-rows: f.rem(40) f.rem(60);
+  row-gap: f.rem(20);
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: f.rem(21);
+
+  h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: f.rem(32);
+    margin: 0;
+  }
+
+  .work-logos {
+    display: flex;
     align-items: center;
-    padding: 10px 0;
-    border-radius: 21px;
+    height: 100%;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.1;
+    text-align: center;
+    gap: f.rem(15);
 
-    h2 {
-        text-align: center;
-        font-weight: 400;
-        font-size: 32px;
-        margin-top: 10px;
+    .companies {
+      border-radius: f.rem(6);
+      border: f.rem(3) solid var(--cp-dark-red);
+      padding: f.rem(20) f.rem(20);
+      margin: auto;
     }
-
-    .work-logos{
-        display: flex;
-        width: 160px;
-        border: 2px solid red;
-        justify-items: center;
-        align-items: center;
-        color: white;
-        text-align: center;
-    }
+    // .companies:hover {
+    //     background-color: var(--cp-light-gray);
+    // }
+  }
 }
