@@ -14,6 +14,23 @@
   font-weight: 700;
   src: url("/fonts/poppins-v22-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 0.625rem 1.25rem;
+  line-height: 1.5;
+  border-radius: 50rem;
+}
+
+.btn:hover {
+  background-color: var(--cp-red-btn-hover-state);
+  transition: background-color 0.5s ease-in-out;
+  box-shadow: 0.125rem 0.125rem 0.1875rem rgba(255, 255, 255, 0.2);
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -28,7 +45,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  max-width: 89.6875rem;
   margin: 0 auto;
   background-color: black;
 }
@@ -137,7 +153,7 @@ a:active {
   font-size: 3.5625rem;
   margin-bottom: 0;
 }
-.hero-section .hero_textarea h1 span {
+.hero-section .hero_textarea h1 .txtcolorchange {
   color: var(--cp-dark-red);
 }
 .hero-section .hero_textarea h2 {
@@ -179,6 +195,7 @@ a:active {
   align-items: center;
   justify-content: space-evenly;
   border-radius: 1.3125rem;
+  margin-block-end: 3.75rem;
 }
 .places-worked h2 {
   text-align: center;
@@ -204,19 +221,8 @@ a:active {
   margin: auto;
 }
 
-.btn {
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  padding: 0.625rem 1.25rem;
-  line-height: 1.5;
-  border-radius: 50rem;
-}
-
-.btn:hover {
-  background-color: var(--cp-red-btn-hover-state);
-  transition: background-color 0.5s ease-in-out;
-  box-shadow: 0.125rem 0.125rem 0.1875rem rgba(255, 255, 255, 0.2);
+.about-me-section {
+  width: 100%;
+  height: 69.8125rem;
+  background-color: var(--cp-light-gray);
 }/*# sourceMappingURL=style.css.map */
