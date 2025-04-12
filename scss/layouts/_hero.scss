@@ -1,6 +1,10 @@
 @use "../abstract/mixins" as mix;
 @use "../abstract/functions" as f;
 
+.txtcolorchange {
+  color: var(--cp-dark-red);
+}
+
 .hero-section {
   max-width: f.rem(1187);
   display: grid;
@@ -21,9 +25,6 @@
     h1 {
       font-size: f.rem(57);
       margin-bottom: 0;
-      .txtcolorchange {
-        color: var(--cp-dark-red);
-      }
     }
     h2 {
       font-weight: 400;

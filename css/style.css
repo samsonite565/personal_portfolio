@@ -28,7 +28,6 @@
 .btn:hover {
   background-color: var(--cp-red-btn-hover-state);
   transition: background-color 0.5s ease-in-out;
-  box-shadow: 0.125rem 0.125rem 0.1875rem rgba(255, 255, 255, 0.2);
 }
 
 html {
@@ -84,6 +83,7 @@ p {
   margin-top: 0;
   font-family: "Poppins";
   font-weight: 400;
+  color: white;
 }
 
 a,
@@ -116,6 +116,8 @@ a:active {
 }
 .navbar .logo {
   margin: 0;
+  width: 9.6875rem;
+  height: auto;
 }
 .navbar .navlinks {
   display: inline-flex;
@@ -127,6 +129,10 @@ a:active {
 .navbar .navlinks a:hover {
   color: var(--cp-hover-state-achorpoits);
   transition: color 0.3s ease-in;
+}
+
+.txtcolorchange {
+  color: var(--cp-dark-red);
 }
 
 .hero-section {
@@ -152,9 +158,6 @@ a:active {
 .hero-section .hero_textarea h1 {
   font-size: 3.5625rem;
   margin-bottom: 0;
-}
-.hero-section .hero_textarea h1 .txtcolorchange {
-  color: var(--cp-dark-red);
 }
 .hero-section .hero_textarea h2 {
   font-weight: 400;
@@ -223,6 +226,30 @@ a:active {
 
 .about-me-section {
   width: 100%;
+  margin-inline: auto;
   height: 69.8125rem;
   background-color: var(--cp-light-gray);
+  position: relative;
+}
+.about-me-section .aboutme {
+  border: 2px solid green;
+  position: absolute;
+  top: 200px;
+  left: 261px;
+  right: 296px;
+  width: auto;
+  height: 718px;
+}
+.about-me-section .aboutme__image {
+  position: absolute;
+}
+.about-me-section .aboutme__text {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr 1fr;
+  grid-column-start: 1/3;
+  position: absolute;
+}
+
+.aboutme__text .mainheading {
+  font-size: 32px;
 }/*# sourceMappingURL=style.css.map */
