@@ -31,10 +31,16 @@
     gap: 2.5rem;
     a {
       color: var(--tc-white);
+      opacity: 1;
+      transition: 0.3s ease-in, opacity 0.3s ease-out, transform 0.3s ease-out;
     }
     a:hover {
       color: var(--cp-hover-state-achorpoits);
       transition: color 0.3s ease-in;
     }
+ 
   }
 }
+a:active {
+  opacity: 0;
+ }

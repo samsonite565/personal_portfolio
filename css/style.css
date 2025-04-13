@@ -125,10 +125,16 @@ a:active {
 }
 .navbar .navlinks a {
   color: var(--tc-white);
+  opacity: 1;
+  transition: 0.3s ease-in, opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 .navbar .navlinks a:hover {
   color: var(--cp-hover-state-achorpoits);
   transition: color 0.3s ease-in;
+}
+
+a:active {
+  opacity: 0;
 }
 
 .txtcolorchange {
@@ -232,24 +238,34 @@ a:active {
   position: relative;
 }
 .about-me-section .aboutme {
-  border: 2px solid green;
-  position: absolute;
-  top: 200px;
-  left: 261px;
-  right: 296px;
-  width: auto;
-  height: 718px;
+  display: grid;
+  grid-template-columns: 581px 1fr;
+  gap: 23px;
+  max-width: 1181px;
+  margin-inline: auto;
+  padding-top: 200px;
+  height: 106vh;
 }
 .about-me-section .aboutme__image {
-  position: absolute;
+  width: 580px;
+  height: auto;
+}
+.about-me-section .aboutme__image img {
+  width: 100%;
+  -o-object-fit: inherit;
+     object-fit: inherit;
 }
 .about-me-section .aboutme__text {
-  display: grid;
-  grid-template-rows: 1fr 1.5fr 1fr;
-  grid-column-start: 1/3;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.about-me-section .aboutme .buttons {
+  display: flex;
+  gap: 20px;
 }
 
 .aboutme__text .mainheading {
-  font-size: 32px;
+  font-size: 48px;
 }/*# sourceMappingURL=style.css.map */
