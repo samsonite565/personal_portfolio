@@ -23,11 +23,8 @@
   padding: 0.625rem 1.25rem;
   line-height: 1.5;
   border-radius: 50rem;
-}
-
-.btn:hover {
-  background-color: var(--cp-red-btn-hover-state);
-  transition: background-color 0.5s ease-in-out;
+  color: white;
+  background-color: var(--cp-dark-red);
 }
 
 html {
@@ -262,9 +259,25 @@ a:active {
   justify-content: center;
   text-align: left;
 }
+.about-me-section .aboutme__text .readmore {
+  color: red;
+  font-weight: 700;
+  cursor: pointer;
+}
+.about-me-section .aboutme__text .p2 {
+  display: none;
+}
 .about-me-section .aboutme .buttons {
   display: flex;
   gap: 20px;
+}
+.about-me-section .aboutme .buttons .aboutme_learn {
+  background-color: var(--cp-light-white);
+  color: black;
+}
+.about-me-section .aboutme .buttons .aboutme_learn:hover {
+  color: white;
+  background-color: var(--cp-hover-state-achorpoits);
 }
 
 .aboutme__text .mainheading {

@@ -12,20 +12,19 @@
   .aboutme {
     display: grid;
     grid-template-columns: 581px 1fr;
-    gap:23px;
+    gap: 23px;
     max-width: 1181px;
     margin-inline: auto;
     padding-top: 200px;
     height: 106vh;
-
 
     &__image {
       width: 580px;
       height: auto;
 
       img {
-       width: 100%;
-       object-fit: inherit;
+        width: 100%;
+        object-fit: inherit;
       }
     }
     &__text {
@@ -33,11 +32,26 @@
       flex-direction: column;
       justify-content: center;
       text-align: left;
-     
+      .readmore {
+        color: red;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .p2 {
+        display: none;
+      }
     }
     .buttons {
       display: flex;
       gap: 20px;
+      .aboutme_learn {
+        background-color: var(--cp-light-white);
+        color: black;
+        &:hover {
+          color: white;
+          background-color: var(--cp-hover-state-achorpoits);
+        }
+      }
     }
   }
 }

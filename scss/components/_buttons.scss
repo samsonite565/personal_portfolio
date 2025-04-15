@@ -9,9 +9,7 @@
   padding: f.rem(10) f.rem(20);
   line-height: 1.5;
   border-radius: 50rem;
+  color: white;
+  background-color: var(--cp-dark-red);
 }
 
-.btn:hover {
-  background-color: var(--cp-red-btn-hover-state);
-  transition: background-color 0.5s ease-in-out;
-}
