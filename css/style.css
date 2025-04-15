@@ -244,14 +244,30 @@ a:active {
   padding-top: 200px;
   height: 106vh;
 }
+@media (width <= 90em) {
+  .about-me-section .aboutme {
+    max-width: 49.1875rem;
+    margin-inline: auto;
+  }
+}
 .about-me-section .aboutme__image {
   width: 580px;
   height: auto;
 }
+@media (width <= 90em) {
+  .about-me-section .aboutme__image {
+    width: 43.125rem;
+  }
+}
 .about-me-section .aboutme__image img {
   width: 100%;
-  -o-object-fit: inherit;
-     object-fit: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (width <= 90em) {
+  .about-me-section .aboutme__image img {
+    width: 80%;
+  }
 }
 .about-me-section .aboutme__text {
   display: flex;
@@ -277,6 +293,9 @@ a:active {
 }
 .about-me-section .aboutme .buttons .aboutme_learn:hover {
   color: white;
+  background-color: var(--cp-hover-state-achorpoits);
+}
+.about-me-section .aboutme .buttons .aboutme_resume:hover {
   background-color: var(--cp-hover-state-achorpoits);
 }
 
