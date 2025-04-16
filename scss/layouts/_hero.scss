@@ -55,4 +55,7 @@
   background: var(--cp-dark-red);
   color: white;
   font-size: f.rem(18);
+  &:hover {
+    background-color: var(--cp-red-btn-hover-state);
+  }
 }

@@ -64,7 +64,7 @@ body {
   --cp-light-white: hsl(0, 100%, 100%);
   --tc-white: hsl(0, 0%, 100%);
   --cp-hover-state-achorpoits: hsl(105, 7%, 43%);
-  --cp-red-btn-hover-state: hsla(0, 62%, 55%, 0.678);
+  --cp-red-btn-hover-state: hsla(0, 60%, 65%, 0.699);
 }
 
 h1,
@@ -193,6 +193,9 @@ a:active {
   color: white;
   font-size: 1.125rem;
 }
+.skills-butn:hover {
+  background-color: var(--cp-red-btn-hover-state);
+}
 
 .places-worked {
   display: grid;
@@ -237,26 +240,26 @@ a:active {
 }
 .about-me-section .aboutme {
   display: grid;
-  grid-template-columns: 581px 1fr;
-  gap: 23px;
-  max-width: 1181px;
+  grid-template-columns: 36.3125rem 1fr;
+  gap: 1.4375rem;
+  max-width: 73.8125rem;
   margin-inline: auto;
-  padding-top: 200px;
+  padding-top: 12.5rem;
   height: 106vh;
 }
 @media (width <= 90em) {
   .about-me-section .aboutme {
-    max-width: 49.1875rem;
-    margin-inline: auto;
+    grid-template-columns: 445px 1fr;
+    max-width: 875px;
   }
 }
 .about-me-section .aboutme__image {
-  width: 580px;
+  width: 36.25rem;
   height: auto;
 }
 @media (width <= 90em) {
   .about-me-section .aboutme__image {
-    width: 43.125rem;
+    width: 27.75rem;
   }
 }
 .about-me-section .aboutme__image img {
@@ -266,7 +269,7 @@ a:active {
 }
 @media (width <= 90em) {
   .about-me-section .aboutme__image img {
-    width: 80%;
+    width: 100%;
   }
 }
 .about-me-section .aboutme__text {
@@ -285,7 +288,7 @@ a:active {
 }
 .about-me-section .aboutme .buttons {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .about-me-section .aboutme .buttons .aboutme_learn {
   background-color: var(--cp-light-white);
@@ -296,9 +299,9 @@ a:active {
   background-color: var(--cp-hover-state-achorpoits);
 }
 .about-me-section .aboutme .buttons .aboutme_resume:hover {
-  background-color: var(--cp-hover-state-achorpoits);
+  background-color: var(--cp-red-btn-hover-state);
 }
 
 .aboutme__text .mainheading {
-  font-size: 48px;
+  font-size: 3rem;
 }/*# sourceMappingURL=style.css.map */

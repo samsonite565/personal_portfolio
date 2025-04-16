@@ -12,29 +12,29 @@
   // The article tag
   .aboutme {
     display: grid;
-    grid-template-columns: 581px 1fr;
-    gap: 23px;
-    max-width: 1181px;
+    grid-template-columns: f.rem(581) 1fr;
+    gap: f.rem(23);
+    max-width: f.rem(1181);
     margin-inline: auto;
-    padding-top: 200px;
+    padding-top: f.rem(200);
     height: 106vh;
     @include m.breakpoint-down(large) {
-      max-width: f.rem(787);
-      margin-inline: auto;
+      grid-template-columns: 445px 1fr;
+      max-width: 875px;
     }
 
     &__image {
-      width: 580px;
+      width: f.rem(580);
       height: auto;
       @include m.breakpoint-down(large) {
-        width: f.rem(690);
+        width: f.rem(444);
       }
 
       img {
         width: 100%;
         object-fit: contain;
         @include m.breakpoint-down(large) {
-          width: 80%;
+          width: 100%;
         }
       }
     }
@@ -54,7 +54,7 @@
     }
     .buttons {
       display: flex;
-      gap: 20px;
+      gap: f.rem(20);
       .aboutme_learn {
         background-color: var(--cp-light-white);
         color: black;
@@ -65,7 +65,7 @@
       }
       .aboutme_resume {
         &:hover {
-          background-color: var(--cp-hover-state-achorpoits);
+          background-color: var(--cp-red-btn-hover-state);
         }
       }
     }
@@ -74,7 +74,7 @@
 //text-section
 .aboutme__text {
   .mainheading {
-    font-size: 48px;
+    font-size: f.rem(48);
   }
 }
 
