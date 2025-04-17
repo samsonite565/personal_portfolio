@@ -29,12 +29,12 @@
 
     .companies {
       border-radius: f.rem(6);
-      border: f.rem(3) solid var(--cp-dark-red);
+      border: f.rem(3) solid var(--cp-last-color-darkshade-green);
       padding: f.rem(20) f.rem(20);
       margin: auto;
     }
-    // .companies:hover {
-    //     background-color: var(--cp-light-gray);
-    // }
+    .companies:hover {
+        background-color: var(--cp-hover-state-color2);
+    }
   }
 }
