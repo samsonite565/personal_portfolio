@@ -6,7 +6,7 @@
   width: 100%;
   margin-inline: auto;
   height: f.rem(1117);
-  background-color: var(--cp-light-gray);
+  background-color: var(--cp-secondary-background-lyellow);
   position: relative;
 
   // The article tag
@@ -44,7 +44,7 @@
       justify-content: center;
       text-align: left;
       .readmore {
-        color: red;
+        color: var(--text-bold-emphasis1);
         font-weight: 700;
         cursor: pointer;
       }
@@ -56,16 +56,16 @@
       display: flex;
       gap: f.rem(20);
       .aboutme_learn {
-        background-color: var(--cp-light-white);
-        color: black;
+        background-color: var(--cp-lightshade-green);
+        color: var(--text-color-black);
         &:hover {
-          color: white;
-          background-color: var(--cp-hover-state-achorpoits);
+          color: var(--text-color-black);
+          background-color: var(--cp-hover-state-color2);
         }
       }
       .aboutme_resume {
         &:hover {
-          background-color: var(--cp-red-btn-hover-state);
+          background-color: var(--cp-hover-state-color2);
         }
       }
     }

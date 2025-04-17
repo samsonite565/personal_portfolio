@@ -23,8 +23,8 @@
   padding: 0.625rem 1.25rem;
   line-height: 1.5;
   border-radius: 50rem;
-  color: white;
-  background-color: var(--cp-dark-red);
+  color: var(--text-color-black);
+  background-color: var(--cp-last-color-darkshade-green);
 }
 
 html {
@@ -43,7 +43,7 @@ body {
   margin: 0;
   padding: 0;
   margin: 0 auto;
-  background-color: black;
+  background-color: var(--cp-primary-background-white);
 }
 
 .wrapper {
@@ -61,10 +61,17 @@ body {
   --cp-dark-black: hsl(0, 0%, 0%);
   --cp-light-gray: hsl(12, 21%, 9%);
   --cp-dark-red: hsl(0, 51%, 26%);
-  --cp-light-white: hsl(0, 100%, 100%);
-  --tc-white: hsl(0, 0%, 100%);
-  --cp-hover-state-achorpoits: hsl(105, 7%, 43%);
-  --cp-red-btn-hover-state: hsla(0, 60%, 65%, 0.699);
+  --cp-hover-state-achorpoits: #6a7566;
+  --cp-primary-background-white: hsl(54, 100%, 93%);
+  --cp-secondary-background-lyellow: hsl(48, 100%, 81%);
+  --cp-lightshade-green: hsl(31, 100%, 72%);
+  --cp-last-color-darkshade-green: hsl(25, 81%, 63%);
+  --cp-hover-state-color: hsl(44, 100%, 77%);
+  --cp-hover-state-color2: hsl(78, 42%, 61%);
+  --cp-hover-state-color3: hsl(104, 7%, 43%);
+  --text-color-white:hsl(0, 0%, 100%);
+  --text-color-black: hsl(0, 0%, 0%);
+  --text-bold-emphasis1: #FF9D23;
 }
 
 h1,
@@ -74,14 +81,14 @@ h3 {
   font-weight: 700;
   line-height: 1.1;
   margin-top: 0;
-  color: white;
+  color: var(--text-color-black);
 }
 
 p {
   margin-top: 0;
   font-family: "Poppins";
   font-weight: 400;
-  color: white;
+  color: var(--text-color-black);
 }
 
 a,
@@ -100,9 +107,9 @@ a:active {
   margin: 0 auto;
   border-bottom-left-radius: 1.25rem;
   border-bottom-right-radius: 1.25rem;
-  background-color: var(--cp-light-gray);
+  background-color: var(--cp-last-color-darkshade-green);
   padding: 0.9375rem;
-  color: white;
+  color: var(--text-color-black);
   margin-block-end: 5.3125rem;
 }
 @media (width <= 90em) {
@@ -127,7 +134,7 @@ a:active {
   transition: 0.3s ease-in, opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 .navbar .navlinks a:hover {
-  color: var(--cp-hover-state-achorpoits);
+  color: var(--cp-hover-state-color);
   transition: color 0.3s ease-in;
 }
 
@@ -136,7 +143,7 @@ a:active {
 }
 
 .txtcolorchange {
-  color: var(--cp-dark-red);
+  color: var(--text-bold-emphasis1);
 }
 
 .hero-section {
@@ -171,7 +178,7 @@ a:active {
 }
 .hero-section .hero_textarea p {
   font-size: 1.375rem;
-  color: var(--tc-white);
+  color: var(--text-color-black);
   max-width: 40ch;
 }
 .hero-section .propic img {
@@ -189,12 +196,12 @@ a:active {
 }
 
 .skills-butn {
-  background: var(--cp-dark-red);
-  color: white;
+  background: var(--cp-last-color-darkshade-green);
+  color: var(--text-color-black);
   font-size: 1.125rem;
 }
 .skills-butn:hover {
-  background-color: var(--cp-red-btn-hover-state);
+  background-color: var(--cp-hover-state-color2);
 }
 
 .places-worked {
@@ -218,7 +225,6 @@ a:active {
   align-items: center;
   height: 100%;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  color: white;
   font-size: 1rem;
   line-height: 1.1;
   text-align: center;
@@ -235,7 +241,7 @@ a:active {
   width: 100%;
   margin-inline: auto;
   height: 69.8125rem;
-  background-color: var(--cp-light-gray);
+  background-color: var(--cp-secondary-background-lyellow);
   position: relative;
 }
 .about-me-section .aboutme {
@@ -279,7 +285,7 @@ a:active {
   text-align: left;
 }
 .about-me-section .aboutme__text .readmore {
-  color: red;
+  color: var(--text-bold-emphasis1);
   font-weight: 700;
   cursor: pointer;
 }
@@ -291,15 +297,15 @@ a:active {
   gap: 1.25rem;
 }
 .about-me-section .aboutme .buttons .aboutme_learn {
-  background-color: var(--cp-light-white);
-  color: black;
+  background-color: var(--cp-lightshade-green);
+  color: var(--text-color-black);
 }
 .about-me-section .aboutme .buttons .aboutme_learn:hover {
-  color: white;
-  background-color: var(--cp-hover-state-achorpoits);
+  color: var(--text-color-black);
+  background-color: var(--cp-hover-state-color2);
 }
 .about-me-section .aboutme .buttons .aboutme_resume:hover {
-  background-color: var(--cp-red-btn-hover-state);
+  background-color: var(--cp-hover-state-color2);
 }
 
 .aboutme__text .mainheading {

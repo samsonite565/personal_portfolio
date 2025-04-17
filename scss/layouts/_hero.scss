@@ -2,7 +2,7 @@
 @use "../abstract/functions" as f;
 
 .txtcolorchange {
-  color: var(--cp-dark-red);
+  color: var(--text-bold-emphasis1);
 }
 
 .hero-section {
@@ -34,7 +34,7 @@
     }
     p {
       font-size: f.rem(22);
-      color: var(--tc-white);
+      color: var(--text-color-black);
       max-width: 40ch;
     }
   }
@@ -52,10 +52,10 @@
 }
 
 .skills-butn {
-  background: var(--cp-dark-red);
-  color: white;
+  background: var(--cp-last-color-darkshade-green);
+  color: var(--text-color-black);
   font-size: f.rem(18);
   &:hover {
-    background-color: var(--cp-red-btn-hover-state);
+    background-color: var(--cp-hover-state-color2);
   }
 }

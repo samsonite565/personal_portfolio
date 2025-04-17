@@ -9,9 +9,9 @@
   margin: 0 auto;
   border-bottom-left-radius: f.rem(20);
   border-bottom-right-radius: f.rem(20);
-  background-color: var(--cp-light-gray);
+  background-color: var(--cp-last-color-darkshade-green);
   padding: f.rem(15);
-  color: white;
+  color: var(--text-color-black);
   margin-block-end: f.rem(85);
 
 
@@ -36,7 +36,7 @@
       transition: 0.3s ease-in, opacity 0.3s ease-out, transform 0.3s ease-out;
     }
     a:hover {
-      color: var(--cp-hover-state-achorpoits);
+      color: var(--cp-hover-state-color);
       transition: color 0.3s ease-in;
     }
  

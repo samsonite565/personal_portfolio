@@ -2,8 +2,18 @@
   --cp-dark-black: hsl(0, 0%, 0%);
   --cp-light-gray: hsl(12, 21%, 9%);
   --cp-dark-red: hsl(0, 51%, 26%);
-  --cp-light-white: hsl(0, 100%, 100%);
-  --tc-white: hsl(0, 0%, 100%);
-  --cp-hover-state-achorpoits: hsl(105, 7%, 43%);
-  --cp-red-btn-hover-state: hsla(0, 60%, 65%, 0.699);
+  --cp-hover-state-achorpoits: #6a7566;
+
+  //Testing new color pallette variables
+  --cp-primary-background-white: hsl(54, 100%, 93%);
+  --cp-secondary-background-lyellow: hsl(48, 100%, 81%);
+  --cp-lightshade-green: hsl(31, 100%, 72%);
+  --cp-last-color-darkshade-green: hsl(25, 81%, 63%);
+  --cp-hover-state-color: hsl(44, 100%, 77%);
+  --cp-hover-state-color2: hsl(78, 42%, 61%);
+  --cp-hover-state-color3: hsl(104, 7%, 43%);
+
+  --text-color-white:hsl(0, 0%, 100%); 
+  --text-color-black: hsl(0, 0%, 0%);
+  --text-bold-emphasis1: #FF9D23;
 }
