@@ -69,14 +69,6 @@
         }
       }
     }
-    .overlay {
-      position: fixed;
-      display: none;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-      cursor: pointer;
-    }
   }
 }
 //text-section
@@ -86,4 +78,4 @@
   }
 }
 
-//buttons
+//pdfoverlay

@@ -1,6 +1,6 @@
 let readTag = document.querySelector(".readmore");
 let paragraph = document.querySelector(".p2");
-let pdfViewer = document.querySelector('.overlay');
+let pdfViewer = document.querySelector('.pdfoverlay');
 let viewResumeBtn = document.querySelector('.aboutme_resume ')
 
 
@@ -12,17 +12,6 @@ function readMore() {
     
   } else {
     readTag.textContent = "Read less...";
-  };
+  }
 }
 readTag.addEventListener("click", readMore);
-
-function viewPdf() {
-  paragraph.classList.toggle('overlay');
-  // if (pdfViewer.contains('overlay')) {
-  //   pdfViewer.style.display = 'block';
-  // } else {
-
-  // };
-};
-
-viewResumeBtn.addEventListener('click', viewPdf)

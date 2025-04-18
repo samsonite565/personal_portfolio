@@ -310,14 +310,6 @@ a:active {
 .about-me-section .aboutme .buttons .aboutme_resume:hover {
   background-color: var(--cp-hover-state-color2);
 }
-.about-me-section .aboutme .overlay {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  cursor: pointer;
-}
 
 .aboutme__text .mainheading {
   font-size: 3rem;
