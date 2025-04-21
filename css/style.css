@@ -313,4 +313,13 @@ a:active {
 
 .aboutme__text .mainheading {
   font-size: 3rem;
+}
+
+.color {
+  fill: blue;
+  opacity: 100%;
+}
+
+.strengths {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
