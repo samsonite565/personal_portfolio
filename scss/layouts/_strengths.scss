@@ -1,3 +1,4 @@
+
 .color {
   fill: var(--cp-last-color-darkshade-green);
   opacity: 100%;
@@ -9,7 +10,7 @@
 
 .projects{
  
-  &__screenshots{
+  &__screenshots{ 
     border: 2px solid green;
     display: flex;
     width: 1163px;
@@ -21,7 +22,6 @@
       border: 2px green solid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(3, 1fr);
-      margin: 0px;
 
       img {
         border: 2px solid black;
@@ -38,8 +38,6 @@
       }
 
       a {
-      width: 116px;
-      height: 40px;
       grid-column: 2;
       align-self: center;
       

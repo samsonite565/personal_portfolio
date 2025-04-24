@@ -336,7 +336,6 @@ a:active {
   border: 2px green solid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
-  margin: 0px;
 }
 .projects__screenshots .recentprojects img {
   border: 2px solid black;
@@ -351,8 +350,6 @@ a:active {
   text-align: left;
 }
 .projects__screenshots .recentprojects a {
-  width: 116px;
-  height: 40px;
   grid-column: 2;
   align-self: center;
 }/*# sourceMappingURL=style.css.map */
