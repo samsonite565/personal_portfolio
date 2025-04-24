@@ -316,10 +316,43 @@ a:active {
 }
 
 .color {
-  fill: blue;
+  fill: var(--cp-last-color-darkshade-green);
   opacity: 100%;
 }
 
 .strengths {
   width: 100%;
+}
+
+.projects__screenshots {
+  border: 2px solid green;
+  display: flex;
+  width: 1163px;
+  height: 100%;
+  gap: 37px;
+}
+.projects__screenshots .recentprojects {
+  display: grid;
+  border: 2px green solid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0px;
+}
+.projects__screenshots .recentprojects img {
+  border: 2px solid black;
+  width: 100%;
+  grid-column: span 2;
+  height: 100%;
+}
+.projects__screenshots .recentprojects .description {
+  grid-column: 1/3;
+  margin: 0px;
+  padding-top: 15px;
+  text-align: left;
+}
+.projects__screenshots .recentprojects a {
+  width: 116px;
+  height: 40px;
+  grid-column: 2;
+  align-self: center;
 }/*# sourceMappingURL=style.css.map */
