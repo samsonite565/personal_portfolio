@@ -22,7 +22,6 @@ body {
 
 .wrapper {
   width: f.rem(1435);
-  background-color: var(--cp-light-gray);
   margin: 0 auto;
   @include mix.breakpoint-down("large") {
     width: f.rem(980);
