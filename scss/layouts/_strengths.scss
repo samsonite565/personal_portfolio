@@ -1,10 +1,48 @@
+@use "../abstract/functions" as f;
+
 .color {
-    fill: blue;
-    opacity: 100%;
+  fill: var(--cp-last-color-darkshade-green);
+  opacity: 100%;
 }
 
-.strengths{
-    width: 100%;
+.strengths {
+  width: 100%;
+}
 
+.projects {
+  &__screenshots {
+    display: flex;
+    width: f.rem(1163);
+    height: f.rem(446);
+    gap: f.rem(37);
 
+    .recentprojects {
+      display: grid;
+      border: f.rem(2) green solid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      width: f.rem(360);
+      padding: f.rem(10);
+      background-color: var(--cp-secondary-background-lblue);
+      border-radius: f.rem(10);
+      img {
+        border: 2px solid black;
+        width: 100%;
+        grid-column: span 2;
+        height: f.rem(188);
+      }
+
+      .description {
+        grid-column: 1/3;
+        margin: f.rem(0);
+        padding: f.rem(15);
+        text-align: left;
+      }
+
+      a {
+        grid-column: 2;
+        align-self: center;
+      }
+    }
+  }
 }
