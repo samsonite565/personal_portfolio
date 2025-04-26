@@ -4,7 +4,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/poppins-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/fonts/poppins-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* poppins-700 - latin */
 @font-face {
@@ -12,7 +12,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: url("./fonts/poppins-v22-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/fonts/poppins-v22-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 .btn {
   display: inline-block;
@@ -329,6 +329,7 @@ a:active {
   margin: 0;
 }
 .projects h2 {
+  margin-top: 3.9375rem;
   font-size: 4rem;
 }
 .projects__screenshots {
@@ -339,19 +340,19 @@ a:active {
 }
 .projects__screenshots .recentprojects {
   display: grid;
-  border: 0.125rem green solid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   width: 22.5rem;
   padding: 0.625rem;
-  background-color: var(--cp-secondary-background-lblue);
-  border-radius: 0.625rem;
+  background-color: var(--cp-last-color-darkshade-green);
+  border-radius: 0.75rem;
 }
 .projects__screenshots .recentprojects img {
-  border: 2px solid black;
   width: 100%;
   grid-column: span 2;
   height: 11.75rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .projects__screenshots .recentprojects .description {
   grid-column: 1/3;
@@ -362,4 +363,9 @@ a:active {
 .projects__screenshots .recentprojects a {
   grid-column: 2;
   align-self: center;
+  background-color: var(--cp-lightshade-green);
+}
+.projects__screenshots .recentprojects a:hover {
+  background-color: var(--cp-hover-state-color);
+  transform: scale(1);
 }/*# sourceMappingURL=style.css.map */
