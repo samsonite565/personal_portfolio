@@ -66,6 +66,8 @@
       .aboutme_resume {
         &:hover {
           background-color: var(--cp-hover-state-color2);
+          transform: scale(1.02);
+          transition: 0.2s ease-in-out;
         }
       }
     }
@@ -78,4 +80,3 @@
   }
 }
 
-//pdfoverlay

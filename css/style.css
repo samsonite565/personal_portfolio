@@ -26,6 +26,10 @@
   color: var(--text-color-black);
   background-color: var(--cp-last-color-darkshade-green);
 }
+.btn:hover {
+  transform: scale(1.01);
+  transition: 0.3s ease-in-out;
+}
 
 html {
   box-sizing: border-box;
@@ -308,6 +312,8 @@ a:active {
 }
 .about-me-section .aboutme .buttons .aboutme_resume:hover {
   background-color: var(--cp-hover-state-color2);
+  transform: scale(1.02);
+  transition: 0.2s ease-in-out;
 }
 
 .aboutme__text .mainheading {
@@ -367,5 +373,6 @@ a:active {
 }
 .projects__screenshots .recentprojects a:hover {
   background-color: var(--cp-hover-state-color);
-  transform: scale(1);
+  transform: scale(1.02);
+  transition: 0.2s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
