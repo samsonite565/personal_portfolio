@@ -11,5 +11,10 @@
   border-radius: 50rem;
   color: var(--text-color-black);
   background-color: var(--cp-last-color-darkshade-green);
+
+  &:hover {
+    transform: scale(1.01);
+    transition: 0.3s ease-in-out;
+  }
 }
 

@@ -10,6 +10,14 @@
 }
 
 .projects {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  h2 {
+    margin-top: f.rem(63);
+    font-size: f.rem(64);
+  }
+
   &__screenshots {
     display: flex;
     width: f.rem(1163);
@@ -18,18 +26,17 @@
 
     .recentprojects {
       display: grid;
-      border: f.rem(2) green solid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(3, 1fr);
       width: f.rem(360);
       padding: f.rem(10);
-      background-color: var(--cp-secondary-background-lblue);
-      border-radius: f.rem(10);
+      background-color: var(--cp-last-color-darkshade-green);
+      border-radius: f.rem(12);
       img {
-        border: 2px solid black;
         width: 100%;
         grid-column: span 2;
         height: f.rem(188);
+        object-fit: contain;
       }
 
       .description {
@@ -42,6 +49,13 @@
       a {
         grid-column: 2;
         align-self: center;
+        background-color: var(--cp-lightshade-green);
+
+        &:hover {
+          background-color: var(--cp-hover-state-color);
+          transform: scale(1.02);
+          transition: 0.2s ease-in-out;
+        }
       }
     }
   }
